@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="electoral_votes_apportionment_files/libs/clipboard/clipboard.min.js"></script>
-<script src="electoral_votes_apportionment_files/libs/quarto-html/tabby.min.js"></script>
-<script src="electoral_votes_apportionment_files/libs/quarto-html/popper.min.js"></script>
-<script src="electoral_votes_apportionment_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="electoral_votes_apportionment_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="electoral_votes_apportionment_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="electoral_votes_apportionment_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="electoral_votes_apportionment_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.398">
 
   <meta name="author" content="Yi Wang">
   <meta name="dcterms.date" content="2024-10-07">
-  <title>Electoral Votes Apportionment</title>
+  <title>US Electoral Votes - Electoral Votes Apportionment</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="electoral_votes_apportionment_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="electoral_votes_apportionment_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,14 +31,14 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="electoral_votes_apportionment_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="styles.css">
-  <link href="electoral_votes_apportionment_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="electoral_votes_apportionment_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -398,6 +398,150 @@ Yi Wang
 <li><p>1840 (Webster method): fixed ratio with standard rounding.</p></li>
 </ul>
 </section>
+<section id="toy-example" class="slide level2">
+<h2>Toy Example</h2>
+<ul>
+<li>Total population: 24000</li>
+<li>Total seats: 8</li>
+<li>Hare quota: <span class="math inline">\(\frac{24\, 000}{8}=3\,000\)</span></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P_i\)</span></td>
+<td style="text-align: center;">3000</td>
+<td style="text-align: center;">6000</td>
+<td style="text-align: center;">15000</td>
+<td style="text-align: center;"><strong>24000</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(t_i\)</span></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="toy-example-1" class="slide level2">
+<h2>Toy Example</h2>
+<table>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P_i\)</span></td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">7000</td>
+<td style="text-align: center;">15000</td>
+<td style="text-align: center;"><strong>24000</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ideal (<span class="math inline">\(t_i\)</span>)</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: center;">2.33</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rounding down</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rounding up</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>9</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">standard rounding</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Webster w/ fixed ratio (3.3)</td>
+<td style="text-align: center;">1 (<span class="math inline">\(\approx 0.61\)</span>)</td>
+<td style="text-align: center;">2 (<span class="math inline">\(\approx 2.12\)</span>)</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="toy-example-2" class="slide level2">
+<h2>Toy Example</h2>
+<table>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P_i\)</span></td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">7000</td>
+<td style="text-align: center;">15000</td>
+<td style="text-align: center;"><strong>24000</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ideal (<span class="math inline">\(t_i\)</span>)</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: center;">2.33</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Webster w/ fixed ratio (3.3)</td>
+<td style="text-align: center;">1 (<span class="math inline">\(\approx 0.61\)</span>)</td>
+<td style="text-align: center;">2 (<span class="math inline">\(\approx 2.12\)</span>)</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="fixed-house-size" class="slide level2">
 <h2>Fixed House Size</h2>
 <ul>
@@ -418,15 +562,6 @@ Yi Wang
 <h2>Quota Rule</h2>
 <p>The <em>quota rule</em> describes a desired property of proportional apportionment methods. It says that the number of seats allocated to a party should be equal to their entitlement plus or minus one.</p>
 </section>
-<section id="apportionment-paradoxes" class="slide level2">
-<h2>Apportionment Paradoxes</h2>
-<ul>
-<li><p><strong>Alabama Paradox</strong> A state could receive fewer representatives if the size of the House increased.</p></li>
-<li><p><strong>Population paradox</strong> <span class="math inline">\(A\)</span> grows at a faster rate than <span class="math inline">\(B\)</span>, i.e., <span class="math inline">\({ A/B}\)</span> increases, then <span class="math inline">\({ A}\)</span> should not lose a seat while <span class="math inline">\({B}\)</span> gains a seat.</p></li>
-<li><p><strong>No-show paradox</strong> A particularly severe variant, where voting for a party causes it to lose seats.</p></li>
-<li><p><strong>Spoiler effect</strong>: a spoiler is a losing candidate who affects the results of an election simply by participating, causing voters to change their opinions.</p></li>
-</ul>
-</section>
 <section id="how-to-solve-the-problem-with-fixed-house-size-1850-1900" class="slide level2">
 <h2>How to solve the problem with fixed house size (1850-1900)?</h2>
 <ol type="1">
@@ -436,6 +571,78 @@ Yi Wang
 <li><strong>Advantage</strong>: Meet the quota rule</li>
 <li><strong>Problem</strong>: sbj. population, Alabama, no-show paradox.</li>
 <li>Had Congress used Webster or Hamilton’s method (as it had since 1840), the 1876 election would have gone to Tilden instead of Hayes.</li>
+</ul>
+</section>
+<section id="toy-example-highest-remainder" class="slide level2">
+<h2>Toy Example-Highest Remainder</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P_i\)</span></td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">7000</td>
+<td style="text-align: center;">15000</td>
+<td style="text-align: center;"><strong>24000</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ideal (<span class="math inline">\(t_i\)</span>)</td>
+<td style="text-align: center;">0.67</td>
+<td style="text-align: center;">2.33</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">initial allocation</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Highest reaminder</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Final allocation</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="apportionment-paradoxes" class="slide level2">
+<h2>Apportionment Paradoxes</h2>
+<ul>
+<li><strong>Alabama Paradox</strong> A state could receive fewer representatives if the size of the House increased. <img data-src="images/alabama_paradox1.png" class="border quarto-figure-center" width="300"></li>
+</ul>
+</section>
+<section id="apportionment-paradoxes-1" class="slide level2">
+<h2>Apportionment Paradoxes</h2>
+<ul>
+<li><strong>Population paradox</strong> <span class="math inline">\(A\)</span> grows at a faster rate than <span class="math inline">\(B\)</span>, i.e., <span class="math inline">\({ A/B}\)</span> increases, then <span class="math inline">\({ A}\)</span> should not lose a seat while <span class="math inline">\({B}\)</span> gains a seat.</li>
+</ul>
+<p><img data-src="images/population_paradox_1.png" class="border quarto-figure-center" width="300"></p>
+<p><img data-src="images/population_paradox_2.png" class="border quarto-figure-center" width="300"></p>
+</section>
+<section id="apportionment-paradoxes-2" class="slide level2">
+<h2>Apportionment Paradoxes</h2>
+<ul>
+<li><strong>No-show paradox</strong> A particularly severe variant, where voting for a party causes it to lose seats.</li>
+<li><strong>Spoiler effect</strong>: a spoiler is a losing candidate who affects the results of an election simply by participating, causing voters to change their opinions.</li>
 </ul>
 </section>
 <section id="how-to-solve-the-problem-with-fixed-house-size-1910-1930" class="slide level2">
@@ -506,6 +713,85 @@ A_n=\frac{P_i}{\sqrt{n(n+1})},\quad n: \text{seats before allocaiton}\,.
 <li><span class="math inline">\(54\)</span>th <span class="math inline">\(\rightarrow\)</span> <strong>New York</strong> because its <span class="math inline">\(A_1&gt;A_n\)</span> of any other state at this point.</li>
 </ul>
 </section>
+<section id="toy-example-3" class="slide level2">
+<h2>Toy Example</h2>
+<table>
+<colgroup>
+<col style="width: 23%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(P_i\)</span> (<span class="math inline">\(t_i\)</span>)</td>
+<td style="text-align: center;">2000(0.67)</td>
+<td style="text-align: center;">7000(2.33)</td>
+<td style="text-align: center;">15000(5)</td>
+<td style="text-align: center;"><strong>24000</strong>(8)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">initial allocation</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(/\sqrt{1\cdot 2}\)</span></td>
+<td style="text-align: center;">1414</td>
+<td style="text-align: center;"><strong>4959</strong> (6th)</td>
+<td style="text-align: center;"><strong>10607</strong>(4th)</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(/\sqrt{2\cdot 3}\)</span></td>
+<td style="text-align: center;">816</td>
+<td style="text-align: center;">2858</td>
+<td style="text-align: center;"><strong>6124</strong> (5th)</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(/\sqrt{3\cdot 4}\)</span></td>
+<td style="text-align: center;">577</td>
+<td style="text-align: center;">2021</td>
+<td style="text-align: center;"><strong>4330</strong> (7th)</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(/\sqrt{4\cdot 5}\)</span></td>
+<td style="text-align: center;">447</td>
+<td style="text-align: center;">1566</td>
+<td style="text-align: center;"><strong>3354</strong> (8th)</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Final allocation</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Actual votes/seat</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">3500</td>
+<td style="text-align: center;">3000</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="example" class="slide level2">
 <h2>Example</h2>
 <ul>
@@ -551,6 +837,7 @@ a \quad \sqrt{ab} \quad \frac{a+b}{2}\quad b
 \frac{2.48-2}{2}=24\% &lt; \frac{3-2.48}{2.48}\approx 21\% \,.
 \]</span></p>
 
+
 <img src="images/aum.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
@@ -559,20 +846,20 @@ a \quad \sqrt{ab} \quad \frac{a+b}{2}\quad b
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="electoral_votes_apportionment_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

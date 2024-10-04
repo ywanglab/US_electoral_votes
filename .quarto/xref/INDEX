@@ -1,5 +1,12 @@
 {
   "electoral_votes_apportionment.qmd": {
-    "electoral_votes_apportionment.html": "1435ddcc"
+    "electoral_votes_apportionment.html": "1435ddcc",
+    "electoral_votes_apportionment.pptx": "b6a14228",
+    "electoral_votes_apportionment.tex": "82b8eb76",
+    "electoral_votes_apportionment.docx": "303c11df",
+    "electoral_votes_apportionment.epub": "a4d8f94e"
+  },
+  "index.qmd": {
+    "index.html": "5fdf131f"
   }
 }

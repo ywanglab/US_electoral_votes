@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "electoral_votes_apportionment.html#to-win-us-presidency-270-electoral-votes",
+    "href": "electoral_votes_apportionment.html#to-win-us-presidency-270-electoral-votes",
+    "title": "Electoral Votes Apportionment",
+    "section": "To win US presidency: 270 electoral votes",
+    "text": "To win US presidency: 270 electoral votes\n\nTotal electoral votes (electors): 538\nSenators: \\(50 \\cdot 2 + 435\\) (Congress) \\(+ 3\\) (Washington D.C., not considered as a state)"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#how-the-435-congressional-seats-are-distributed",
+    "href": "electoral_votes_apportionment.html#how-the-435-congressional-seats-are-distributed",
+    "title": "Electoral Votes Apportionment",
+    "section": "How the 435 congressional seats are distributed?",
+    "text": "How the 435 congressional seats are distributed?\n\nBy population of each state\nPrinciple: equal representation (votes per seat)\nEach state must have at least one Congressional seat (50)\nRemaining \\(435-50= 385\\)."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#how-to-solve-the-problem",
+    "href": "electoral_votes_apportionment.html#how-to-solve-the-problem",
+    "title": "Electoral Votes Apportionment",
+    "section": "How to solve the problem",
+    "text": "How to solve the problem\nCalculation of a Congressional apportionment requires three factors\n\nthe apportionment population of each state,\nthe number of representatives to be allocated among the states,\nand a method to use for the calculation."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#what-populationt-to-use",
+    "href": "electoral_votes_apportionment.html#what-populationt-to-use",
+    "title": "Electoral Votes Apportionment",
+    "section": "What populationt to use?",
+    "text": "What populationt to use?\nArticle 1, Section 2, of the Constitution sets the basis: Decennial census of population (1790-present, except 1920), with the provision that each state must have at least one representative."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#ideally-hare-quota-votes-per-seat",
+    "href": "electoral_votes_apportionment.html#ideally-hare-quota-votes-per-seat",
+    "title": "Electoral Votes Apportionment",
+    "section": "Ideally: Hare Quota (votes per seat)",
+    "text": "Ideally: Hare Quota (votes per seat)\n\\[\n\\text{votes per seat }(\\lambda)= \\frac{\\text{Total US population }(P)}{435}\\,.\n\\] \\[\n\\begin{aligned}\n\\textbf{entilted} \\text{ seats of each state }(t^*_i)&= \\frac{\\text{Total state population }(P_i)}{\\lambda}\\,\\\\\n\\sum_{i=1}^n{t^*_i}&=1\\,.\n\\end{aligned}\n\\]\nProblem: \\(t^*_i\\) is in general fractional. Not practical."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#method-of-fixed-ratio",
+    "href": "electoral_votes_apportionment.html#method-of-fixed-ratio",
+    "title": "Electoral Votes Apportionment",
+    "section": "Method of Fixed Ratio",
+    "text": "Method of Fixed Ratio\n\nRounding up\nRounding down\nStandard rounding (round 5 up and 4 down)\n\nNew problem: variable seats (too many or too few)\n\n1787-1790 (first enumeration): 65 set by the Constitution\n1790-1830 (Jefferson method: fixed ratio with rounding down): resulting 105 seats.\n1840 (Webster method): fixed ratio with standard rounding."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#toy-example",
+    "href": "electoral_votes_apportionment.html#toy-example",
+    "title": "Electoral Votes Apportionment",
+    "section": "Toy Example",
+    "text": "Toy Example\n\nTotal population: 24000\nTotal seats: 8\nHare quota: \\(\\frac{24\\, 000}{8}=3\\,000\\)\n\n\n\n\n\nA\nB\nC\nTotal\n\n\n\n\n\\(P_i\\)\n3000\n6000\n15000\n24000\n\n\n\\(t_i\\)\n1\n2\n5\n8"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#toy-example-1",
+    "href": "electoral_votes_apportionment.html#toy-example-1",
+    "title": "Electoral Votes Apportionment",
+    "section": "Toy Example",
+    "text": "Toy Example\n\n\n\n\n\n\n\n\n\n\n\nA\nB\nC\nTotal\n\n\n\n\n\\(P_i\\)\n2000\n7000\n15000\n24000\n\n\nIdeal (\\(t_i\\))\n0.67\n2.33\n5\n8\n\n\nrounding down\n0\n2\n5\n7\n\n\nrounding up\n1\n3\n5\n9\n\n\nstandard rounding\n1\n2\n5\n8\n\n\nWebster w/ fixed ratio (3.3)\n1 (\\(\\approx 0.61\\))\n2 (\\(\\approx 2.12\\))\n5\n8"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#toy-example-2",
+    "href": "electoral_votes_apportionment.html#toy-example-2",
+    "title": "Electoral Votes Apportionment",
+    "section": "Toy Example",
+    "text": "Toy Example\n\n\n\n\n\n\n\n\n\n\n\nA\nB\nC\nTotal\n\n\n\n\n\\(P_i\\)\n2000\n7000\n15000\n24000\n\n\nIdeal (\\(t_i\\))\n0.67\n2.33\n5\n8\n\n\nWebster w/ fixed ratio (3.3)\n1 (\\(\\approx 0.61\\))\n2 (\\(\\approx 2.12\\))\n5\n8"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#fixed-house-size",
+    "href": "electoral_votes_apportionment.html#fixed-house-size",
+    "title": "Electoral Votes Apportionment",
+    "section": "Fixed House Size",
+    "text": "Fixed House Size\n\n1911: House size was fixed at 433 with provision for the addition of one seat each for Arizona and New Mexico when they became states (U.S. Statutes at Large, 37 Stat 13, 14 (1911))\nThe House size, 435 members, has been unchanged since, except for a temporary increase to 437 at the time of admission of Alaska and Hawaii as states (following the 1950 census until the 1960 census)."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#mathematical-formulation",
+    "href": "electoral_votes_apportionment.html#mathematical-formulation",
+    "title": "Electoral Votes Apportionment",
+    "section": "Mathematical Formulation",
+    "text": "Mathematical Formulation\nGiven \\((t_1,t_2,\\cdots, t_k)\\), find a vector of non-negative integers \\((n_1,n_2,\\cdots, n_k)\\), such that \\[\n\\begin{aligned}\n\\sum_{i=1}^k{t^*_i}&=1\\\\\n\\sum_{i=1}^k n_i &=h\\,.\n\\end{aligned}\n\\] \\[\\text{minimize expectated } \\textbf{ errors or seat bias}\\,.\\] e.g. favoring smaller parties, or large parties, etc."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#quota-rule",
+    "href": "electoral_votes_apportionment.html#quota-rule",
+    "title": "Electoral Votes Apportionment",
+    "section": "Quota Rule",
+    "text": "Quota Rule\nThe quota rule describes a desired property of proportional apportionment methods. It says that the number of seats allocated to a party should be equal to their entitlement plus or minus one."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#how-to-solve-the-problem-with-fixed-house-size-1850-1900",
+    "href": "electoral_votes_apportionment.html#how-to-solve-the-problem-with-fixed-house-size-1850-1900",
+    "title": "Electoral Votes Apportionment",
+    "section": "How to solve the problem with fixed house size (1850-1900)?",
+    "text": "How to solve the problem with fixed house size (1850-1900)?\n\nLargest remainder method(Hamilton/Vinton method) first assign integral seats to each state, then assign the remaining seat one at a time with the largest remainder.\n\n\nAdvantage: Meet the quota rule\nProblem: sbj. population, Alabama, no-show paradox.\nHad Congress used Webster or Hamilton’s method (as it had since 1840), the 1876 election would have gone to Tilden instead of Hayes."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#toy-example-highest-remainder",
+    "href": "electoral_votes_apportionment.html#toy-example-highest-remainder",
+    "title": "Electoral Votes Apportionment",
+    "section": "Toy Example-Highest Remainder",
+    "text": "Toy Example-Highest Remainder\n\n\n\n\nA\nB\nC\nTotal\n\n\n\n\n\\(P_i\\)\n2000\n7000\n15000\n24000\n\n\nIdeal (\\(t_i\\))\n0.67\n2.33\n5\n8\n\n\ninitial allocation\n0\n2\n5\n7\n\n\nHighest reaminder\n1\n0\n0\n1\n\n\nFinal allocation\n1\n2\n5\n8"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#apportionment-paradoxes",
+    "href": "electoral_votes_apportionment.html#apportionment-paradoxes",
+    "title": "Electoral Votes Apportionment",
+    "section": "Apportionment Paradoxes",
+    "text": "Apportionment Paradoxes\n\nAlabama Paradox A state could receive fewer representatives if the size of the House increased."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#apportionment-paradoxes-1",
+    "href": "electoral_votes_apportionment.html#apportionment-paradoxes-1",
+    "title": "Electoral Votes Apportionment",
+    "section": "Apportionment Paradoxes",
+    "text": "Apportionment Paradoxes\n\nPopulation paradox \\(A\\) grows at a faster rate than \\(B\\), i.e., \\({ A/B}\\) increases, then \\({ A}\\) should not lose a seat while \\({B}\\) gains a seat."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#apportionment-paradoxes-2",
+    "href": "electoral_votes_apportionment.html#apportionment-paradoxes-2",
+    "title": "Electoral Votes Apportionment",
+    "section": "Apportionment Paradoxes",
+    "text": "Apportionment Paradoxes\n\nNo-show paradox A particularly severe variant, where voting for a party causes it to lose seats.\nSpoiler effect: a spoiler is a losing candidate who affects the results of an election simply by participating, causing voters to change their opinions."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#how-to-solve-the-problem-with-fixed-house-size-1910-1930",
+    "href": "electoral_votes_apportionment.html#how-to-solve-the-problem-with-fixed-house-size-1910-1930",
+    "title": "Electoral Votes Apportionment",
+    "section": "How to solve the problem with fixed house size (1910, 1930)",
+    "text": "How to solve the problem with fixed house size (1910, 1930)\n\n(1910, 1930) Webster method with a pre-selected fixed ratio: The ratio was selected (trial-and-error) so that the result would be the predetermined size of the House of Representatives."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#how-to-solve-the-problem-with-fixed-house-size",
+    "href": "electoral_votes_apportionment.html#how-to-solve-the-problem-with-fixed-house-size",
+    "title": "Electoral Votes Apportionment",
+    "section": "How to solve the problem with fixed house size",
+    "text": "How to solve the problem with fixed house size\n\nHighest vote average (votes per seat): Starting from 0 for each state, assign a seat one a time to the state that has the highest vote average per seat.\n\nAverage by dividing \\(P_i\\) by\n\n\\(n\\)\n\\((n+1)\\)\n\nbetween \\(n\\) and \\((n+1)\\) (continuity correction)? which one?"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#highest-vote-average-votes-per-seat-method-divisor-method",
+    "href": "electoral_votes_apportionment.html#highest-vote-average-votes-per-seat-method-divisor-method",
+    "title": "Electoral Votes Apportionment",
+    "section": "Highest Vote Average (votes per seat) Method (Divisor Method)",
+    "text": "Highest Vote Average (votes per seat) Method (Divisor Method)\n\nAdam (divided by the current seats \\(n\\); rounding up)\nJefferson/D’Hondt (divided by \\((n+1)\\); rounding down) favors large parties. “ghosts of departed representatives”\nWebster/Saine-Lagne (divided by \\(n+\\frac{1}{2}\\), standard rounding: unbiased in terms of expected seat bias).\nHuntington-Hill (Method of equal proportions) (divided by \\(\\sqrt{n\\cdot(n+1})\\), Geometric rounding): unbiased in terms of relative percentage error, adopted by U.S. Congress (US code Title 2) in 1941 following the census of 1940."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#comparison-and-historical-anecdotes",
+    "href": "electoral_votes_apportionment.html#comparison-and-historical-anecdotes",
+    "title": "Electoral Votes Apportionment",
+    "section": "Comparison and historical anecdotes",
+    "text": "Comparison and historical anecdotes\n\nHuntington-Hill’s method and Webster’s method very similar;\nwhen first used, differed only in whether assigned a single seat to Michigan or Arkansas.\nFollowing the 1990 census, two lawsuits concerning apportionment issues were filed in federal courts. The U.S. Supreme Court held that the method of equal proportions was constitutional;\nUS Department of Commerce v. Montana 112 S.Ct. 1415 (1992) and Franklin v. Massachusetts 112 S.Ct. 2767 (1992)."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#propoerties-of-divisor-methods-highest-vote-averge",
+    "href": "electoral_votes_apportionment.html#propoerties-of-divisor-methods-highest-vote-averge",
+    "title": "Electoral Votes Apportionment",
+    "section": "Propoerties of Divisor Methods (Highest Vote Averge)",
+    "text": "Propoerties of Divisor Methods (Highest Vote Averge)\n\nMonotoniciy: voting for a party can never cause it to lose seats (No-show paradox)\nHouse Monononiciy: Increasing the number of seats should not case a state to lose a seat (Alabama Paradox)\nMin-Max inequality: It is impossible to lower the highest vote average by reassigning a sear from one party to another. \\[\n\\max \\left\\{\\frac{\\text{votes[party]}}{\\text{post(seats[party])}}\\right\\} \\le \\min \\left\\{\\frac{\\text{votes[party]}}{\\text{post(seats[party])}+1}\\right\\}\n\\]"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#huntington-hill-method-equal-proportions-method-1940-",
+    "href": "electoral_votes_apportionment.html#huntington-hill-method-equal-proportions-method-1940-",
+    "title": "Electoral Votes Apportionment",
+    "section": "Huntington-Hill Method( Equal Proportions Method): 1940-",
+    "text": "Huntington-Hill Method( Equal Proportions Method): 1940-\n\nEvery party begins with 0 seats. Then, at each iteration, allocate a seat to the party with the highest vote average (votes per seat) divided by \\(\\sqrt{n(n+1)}\\).\nMinimizes the relative difference in the number of constituents represented by each legislator. In other words, no transfer of a seat from one state to another can reduce the percent error in representation for both states.\nConceptually, this method rounds to the integer that has the smallest relative (percent) difference."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#huntington-hill-method-details",
+    "href": "electoral_votes_apportionment.html#huntington-hill-method-details",
+    "title": "Electoral Votes Apportionment",
+    "section": "Huntington-Hill Method (Details)",
+    "text": "Huntington-Hill Method (Details)\nCompute a priority value \\[\nA_n=\\frac{P_i}{\\sqrt{n(n+1})},\\quad n: \\text{seats before allocaiton}\\,.\n\\]\n\n\\(51\\)st \\(\\rightarrow\\) California with the largest \\(A_1\\).\n\n\\(52\\)nd \\(\\rightarrow\\) Texas, because its \\(A_1&gt;A_n\\) of any other state.\n\\(53\\)st \\(\\rightarrow\\) California because its \\(A_2&gt;A_n\\) of any other state.\n\\(54\\)th \\(\\rightarrow\\) New York because its \\(A_1&gt;A_n\\) of any other state at this point."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#toy-example-3",
+    "href": "electoral_votes_apportionment.html#toy-example-3",
+    "title": "Electoral Votes Apportionment",
+    "section": "Toy Example",
+    "text": "Toy Example\n\n\n\n\n\n\n\n\n\n\n\nA\nB\nC\nTotal\n\n\n\n\n\\(P_i\\) (\\(t_i\\))\n2000(0.67)\n7000(2.33)\n15000(5)\n24000(8)\n\n\ninitial allocation\n1\n1\n1\n3\n\n\n\\(/\\sqrt{1\\cdot 2}\\)\n1414\n4959 (6th)\n10607(4th)\n2\n\n\n\\(/\\sqrt{2\\cdot 3}\\)\n816\n2858\n6124 (5th)\n1\n\n\n\\(/\\sqrt{3\\cdot 4}\\)\n577\n2021\n4330 (7th)\n1\n\n\n\\(/\\sqrt{4\\cdot 5}\\)\n447\n1566\n3354 (8th)\n1\n\n\nFinal allocation\n1\n2\n5\n8\n\n\nActual votes/seat\n2000\n3500\n3000"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#example",
+    "href": "electoral_votes_apportionment.html#example",
+    "title": "Electoral Votes Apportionment",
+    "section": "Example",
+    "text": "Example\n\n\\(P_A=100\\,000\\), \\(P_B=80\\,000\\), \\(P_C=30\\,000\\), \\(P_A+P_B+P_C=210\\,000\\).\nTotal number of seats \\(=8\\).\nIdeal seats =\\(\\frac{P_i}{P_A+P_B+P_C}\\cdot 8\\)."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#ghost-of-departed-representatives",
+    "href": "electoral_votes_apportionment.html#ghost-of-departed-representatives",
+    "title": "Electoral Votes Apportionment",
+    "section": "Ghost of Departed Representatives",
+    "text": "Ghost of Departed Representatives\n The Yellow Party: has only \\(46\\%\\) of votes, but won \\(11/21\\approx 52\\%\\) majority seats. Violating the Majority-preserving clause."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#balinski-young-theorem-1980",
+    "href": "electoral_votes_apportionment.html#balinski-young-theorem-1980",
+    "title": "Electoral Votes Apportionment",
+    "section": "Balinski-Young Theorem (1980)",
+    "text": "Balinski-Young Theorem (1980)\n\nAny method that follows the quota rule must fail the population paradox.\nAny method that is free of the population paradox must fail the quota rule for some circumstances.\nLargest remainder method satisfies the quota rule, it violates the Alabama paradox and the population paradox.\nThe highest averages methods violate the quota rule, avoid population paradox and no-show paradox. Not sensitive to spoiler effect. only do so (violate quota rule) rarely."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#why-use-geometric-mean",
+    "href": "electoral_votes_apportionment.html#why-use-geometric-mean",
+    "title": "Electoral Votes Apportionment",
+    "section": "Why use geometric mean?",
+    "text": "Why use geometric mean?\nGiven two positive numbers \\(a\\) and \\(b\\), then the geometric mean of \\(a\\) and \\(b\\) is \\[\nG=\\sqrt{ab}\\,.\n\\] AM-GM theorem: \\[\n\\sqrt{ab}\\le \\frac{a+b}{2}\\,.\n\\] The equality is true if and if \\(a=b\\)."
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#gm-equal-relative-error",
+    "href": "electoral_votes_apportionment.html#gm-equal-relative-error",
+    "title": "Electoral Votes Apportionment",
+    "section": "GM-equal relative error",
+    "text": "GM-equal relative error\n\\[\na \\quad \\sqrt{ab} \\quad \\frac{a+b}{2}\\quad b\n\\] \\[\n\\frac{\\sqrt{ab}}{a}=\\frac{b}{\\sqrt{ab}}\\,,\n\\] that is, the two relative percentage errors are equal: \\[\n\\frac{\\sqrt{ab}-a}{a}=\\frac{b-\\sqrt{ab}}{\\sqrt{ab}}\\,.\n\\]"
+  },
+  {
+    "objectID": "electoral_votes_apportionment.html#gm-example",
+    "href": "electoral_votes_apportionment.html#gm-example",
+    "title": "Electoral Votes Apportionment",
+    "section": "GM-Example",
+    "text": "GM-Example\nFor example, if \\(a=2\\) and \\(b=3\\), then \\(\\sqrt{2\\cdot 3} \\approx 2.45\\). Therefore, for \\(x=2.48\\), if performing geometric rounding, \\(2.48\\approx 3\\). This rounding minimize the percentage error: \\[\n\\frac{2.48-2}{2}=24\\% &lt; \\frac{3-2.48}{2.48}\\approx 21\\% \\,.\n\\]"
+  }
+]

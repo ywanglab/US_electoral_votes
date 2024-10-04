@@ -1,0 +1,29 @@
+project:
+  type: website
+  
+
+website:
+  title: "US Electoral Votes"
+  
+  navbar:
+    left:
+    - href: index.qmd
+    - electoral_votes_apportionment.qmd
+    
+    # - policies/policies.qmd
+    # - summary.qmd
+    # - references.qmd
+
+# bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+  
+    
+
+
+editor: visual
+
